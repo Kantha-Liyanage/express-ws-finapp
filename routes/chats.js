@@ -6,6 +6,15 @@ router.get("/0", async function (req, res, next) {
   var chats = {
     chats: [
       {
+        id: 801,
+        message: "latest messages",
+        createdDate: "20210925",
+        createdTime: "131200",
+        transaction: false,
+        deleted: false,
+        imagePath: "",
+      },
+      {
         id: 80,
         message: "@Cash#Salary+150000&20210925",
         createdDate: "20210925",
@@ -64,7 +73,7 @@ router.get("/0", async function (req, res, next) {
         message: "Uber Eats",
         createdDate: "20210925",
         createdTime: "131200",
-        transaction: true,
+        transaction: false,
         deleted: false,
         imagePath: "",
       },
@@ -78,6 +87,15 @@ router.get("/10", async function (req, res, next) {
   console.log("Chats/GET");
   var chats = {
     chats: [
+      {
+        id: 901,
+        message: "previouse message",
+        createdDate: "20210901",
+        createdTime: "131200",
+        transaction: false,
+        deleted: false,
+        imagePath: "",
+      },
       {
         id: 90,
         message: "@Cash#Salary+150000&20210901",
@@ -188,6 +206,15 @@ router.get("/20", async function (req, res, next) {
   console.log("Chats/GET");
   var chats = {
     chats: [
+      {
+        id: 1001,
+        message: "Oldest messages",
+        createdDate: "20210801",
+        createdTime: "131200",
+        transaction: false,
+        deleted: false,
+        imagePath: "",
+      },
       {
         id: 100,
         message: "@Cash#Salary+150000&20210801",
