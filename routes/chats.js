@@ -326,7 +326,11 @@ router.post("/", async function (req, res, next) {
   var result = {
     message: "Chat created.",
   };
-  res.status(200).json(result);
+
+  //Dummy delay
+  await setTimeout(async () => {
+    res.status(200).json(result);
+  }, 5000);
 });
 
 router.delete("/", async function (req, res, next) {

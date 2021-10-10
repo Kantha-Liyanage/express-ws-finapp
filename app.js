@@ -10,6 +10,7 @@ var authenticationRouter = require("./routes/authentication");
 var categoriesRouter = require("./routes/categories");
 var accountsRouter = require("./routes/accounts");
 var chatsRouter = require("./routes/chats");
+var reportsRouter = require("./routes/reports");
 
 var app = express();
 
@@ -29,7 +30,7 @@ app.use("/api", auth);
 app.use("/api/categories", categoriesRouter);
 app.use("/api/accounts", accountsRouter);
 app.use("/api/chats", chatsRouter);
-app.use("/api/reports", chatsRouter);
+app.use("/api/reports", reportsRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
