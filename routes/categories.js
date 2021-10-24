@@ -5,6 +5,7 @@ router.get("/", function (req, res, next) {
   console.log("Categories/GET");
   var categories = {
     categories: [
+      /*
       {
         id: 1,
         name: "Salary",
@@ -88,6 +89,7 @@ router.get("/", function (req, res, next) {
         budgetAmount: "3000.0",
         utilizedAmount: "3500.0",
       },
+      */
     ],
   };
   res.status(200).json(categories);

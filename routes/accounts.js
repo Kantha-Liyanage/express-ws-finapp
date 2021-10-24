@@ -5,6 +5,7 @@ router.get("/", async function (req, res, next) {
   console.log("Accounts/GET");
   var accounts = {
     accounts: [
+      /*
       {
         id: 1,
         name: "Cash",
@@ -29,6 +30,7 @@ router.get("/", async function (req, res, next) {
         accountType: "liability",
         currentBalance: "5000.0",
       },
+      */
     ],
   };
   res.status(200).json(accounts);
